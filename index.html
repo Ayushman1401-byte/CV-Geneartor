@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PDF Library -->
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>CV Generator</h1>
+
+        <!-- PERSONAL INFORMATION -->
+        <h2>Personal Information</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <input type="email" id="email" placeholder="Email Address">
+
+        <input type="text"  id="location" placeholder="Location">
+
+        <input type="file" id="photo" accept="image/*" placeholder="Photo">
+
+        <!-- OBJECTIVE -->
+        <h2>Objective</h2>
+
+        <textarea id="objective" placeholder="Career Objective"></textarea>
+
+        <!-- EDUCATION -->
+        <h2>Education</h2>
+
+        <input type="text" id="degree" placeholder="Degree Name">
+
+        <input type="text" id="college" placeholder="College / University">
+
+        <input type="text" id="year" placeholder="Year of Passing">
+
+        <input type="text" id="cgpa" placeholder="CGPA">
+
+        <!-- SKILLS -->
+        <h2>Skills</h2>
+
+        <textarea id="skills" placeholder="Technical Skills, Programming Languages"></textarea>
+
+        <!-- PROJECTS -->
+        <h2>Projects</h2>
+
+        <input type="text" id="projectName" placeholder="Project Name">
+
+        <input type="text" id="technologies" placeholder="Technologies Used">
+
+        <textarea id="projectDesc" placeholder="Short Description"></textarea>
+
+        <!-- EXPERIENCE -->
+        <h2>Experience / Internship</h2>
+
+        <textarea id="experience" placeholder="Experience / Internship"></textarea>
+
+        <!-- CERTIFICATIONS -->
+        <h2>Certifications</h2>
+
+        <textarea id="certifications" placeholder="Certifications"></textarea>
+
+        <!-- ACHIEVEMENTS -->
+        <h2>Achievements</h2>
+
+        <textarea id="achievements" placeholder="Achievements"></textarea>
+
+        <!-- LANGUAGES -->
+        <h2>Languages Known</h2>
+
+        <input type="text" id="languages" placeholder="Languages Known">
+
+        <!-- HOBBIES -->
+        <h2>Hobbies</h2>
+
+        <input type="text" id="hobbies" placeholder="Hobbies">
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+            <button onclick="generateCV()">Generate CV</button>
+
+            <button onclick="downloadPDF()">Download PDF</button>
+
+            <button onclick="printCV()">Print CV</button>
+
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+
+        </div>
+
+    </div>
+
+    <!-- GENERATED CV -->
+    <div id="cvOutput"></div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
