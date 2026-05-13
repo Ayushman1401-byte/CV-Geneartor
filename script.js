@@ -248,6 +248,7 @@ async function downloadPDF() {
     html2pdf()
         .set(options)
         .from(element)
+        .toPdf()
         .save();
 }
 /* PRINT CV */
